@@ -28,12 +28,12 @@ class Account:
 
 #create an instance of the class
 
-i = Account('john', 0)
+i = Account(input('enter customer first name:'), 0)
 print(i.get_name(), 'has an account balance of', i.get_balance() )
-i.Credit(30)
+i.Credit(float(input('enter the amount you wish to deposit:')))
 print(i.get_name(), 'has a new account balance of', i.get_balance())    
-i.Debit(10)
+i.Debit(float(input('enter the amount you wish to withdraw:')))
 print(i.get_name(), 'has made a withdraw and the new balance is', i.get_balance())
-i.set_name('John Mwangi')
+i.set_name(input('update your new name here:'))
 print(i.get_name(), 'account balance is', i.get_balance())
     
