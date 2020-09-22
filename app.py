@@ -30,6 +30,10 @@ class Account:
 
 i = Account('john', 0)
 print(i.get_name(), 'has an account balance of', i.get_balance() )
-    
-
+i.Credit(30)
+print(i.get_name(), 'has a new account balance of', i.get_balance())    
+i.Debit(10)
+print(i.get_name(), 'has made a withdraw and the new balance is', i.get_balance())
+i.set_name('John Mwangi')
+print(i.get_name(), 'account balance is', i.get_balance())
     
